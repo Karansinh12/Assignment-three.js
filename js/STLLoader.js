@@ -1,30 +1,3 @@
-/**
- * @author aleeper / http://adamleeper.com/
- * @author mrdoob / http://mrdoob.com/
- * @author gero3 / https://github.com/gero3
- *
- * Description: A THREE loader for STL ASCII files, as created by Solidworks and other CAD programs.
- *
- * Supports both binary and ASCII encoded files, with automatic detection of type.
- *
- * Limitations:
- *  Binary decoding supports "Magics" color format (http://en.wikipedia.org/wiki/STL_(file_format)#Color_in_binary_STL).
- *  There is perhaps some question as to how valid it is to always assume little-endian-ness.
- *  ASCII decoding assumes file is UTF-8. Seems to work for the examples...
- *
- * Usage:
- *  var loader = new THREE.STLLoader();
- *  loader.load( './models/stl/slotted_disk.stl', function ( geometry ) {
- *    scene.add( new THREE.Mesh( geometry ) );
- *  });
- *
- * For binary STLs geometry might contain colors for vertices. To use it:
- *  // use the same code to load STL as above
- *  if (geometry.hasColors) {
- *    material = new THREE.MeshPhongMaterial({ opacity: geometry.alpha, vertexColors: THREE.VertexColors });
- *  } else { .... }
- *  var mesh = new THREE.Mesh( geometry, material );
- */
 
 
 THREE.STLLoader = function ( manager ) {
