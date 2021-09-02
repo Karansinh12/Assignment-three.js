@@ -55,9 +55,7 @@ if ( Function.prototype.name === undefined ) {
 
 if ( Object.assign === undefined ) {
 
-	// Missing in IE.
-	// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign
-
+	
 	( function () {
 
 		Object.assign = function ( target ) {
@@ -38202,11 +38200,9 @@ THREE.ShapeGeometry.prototype.addShape = function ( shape, options ) {
 
 };
 
-// File:src/extras/geometries/LatheBufferGeometry.js
 
-/**
- * @author Mugen87 / https://github.com/Mugen87
- */
+
+
 
  // points - to create a closed torus, one must use a set of points
  //    like so: [ a, b,
